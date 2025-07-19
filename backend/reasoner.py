@@ -1,9 +1,8 @@
 import openai
 from backend.retriever import LegalRetriever
 
-# Load your OpenAI key
-openai.api_key = "sk-..."  # Replace with your key or use environment variable
 
+openai.api_key = "sk-..."  
 retriever = LegalRetriever()
 
 def reason_with_gpt(case_facts: str):
